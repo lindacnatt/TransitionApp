@@ -26,9 +26,10 @@ const Header = () => (
       justify-content: space-between;
       align-items: center;
       width: 100%;
-      padding-top: 2rem;
+      padding-top: 4rem;
       padding-left: 1rem;
       padding-right: 1rem;
+      padding-bottom: 1.5rem;
     `}
   >
 
