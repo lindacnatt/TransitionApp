@@ -13,10 +13,12 @@ import "./style.css";
 const IndexPage = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
+  var Image = {
 
+  }
   return (
     <Layout>
-{/*       <h1
+      {/*       <h1
         css={css`
           padding-bottom: 30px;
         `}
@@ -25,27 +27,27 @@ const IndexPage = () => {
         Click here
       </h1> */}
       <Grid container spacing={2} justify="center" alignItems="center">
-        <Grid  onClick={toggle} item xs={6}>
+        <Grid onClick={toggle} item xs={6}>
+          <Card1 title="Icon" imageSource={require('../images/icon.png')}/>
+        </Grid>
+        <Grid item xs={6}>
+          <Card1 title="Icon" imageSource={require('../images/icon.png')}/>
+        </Grid>
+        <Grid item xs={6}>
+          <Card1 title="Icon" imageSource={require('../images/icon.png')}/>
+        </Grid>
+        <Grid item xs={6}>
+          <Card1 title="Icon" imageSource={require('../images/flower.jpeg')}/>
+        </Grid>
+{/*         <Grid item xs={6}>
           <Card1 />
         </Grid>
         <Grid item xs={6}>
-          <Card1/>
-        </Grid>
-        <Grid item xs={6}>
           <Card1 />
-        </Grid>
-        <Grid item xs={6}>
-          <Card1 />
-        </Grid>
-        <Grid item xs={6}>
-          <Card1 />
-        </Grid>
-        <Grid item xs={6}>
-          <Card1 />
-        </Grid>
+        </Grid> */}
         <div className={`menu ${isOpen ? "active" : "inactive"}`}>
           <CardDetail />
-        </div>
+        </div> 
       </Grid>
     </Layout>
   );
