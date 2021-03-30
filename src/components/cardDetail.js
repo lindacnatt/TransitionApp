@@ -20,7 +20,7 @@ const CardDetail = () => {
         className="image"
         css={css`
           top: 0;
-          height: 60vw;
+          height: 70vw;
           background-color: grey;
         `}
       ></div>

@@ -21,7 +21,6 @@ return (
           margin: 0;
           height: 100%;
           overflow: hidden;
-
           font-size: 18px;
           color: #555;
           line-height: 1.4;
@@ -65,7 +64,8 @@ return (
         margin: 2rem auto 4rem;
         max-width: 90vw;
         width: 550px;
-       
+        standalone: mt-22;
+        padding-top: 4rem;
       `}
     >
       {children}
