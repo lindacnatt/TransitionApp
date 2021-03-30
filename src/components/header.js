@@ -25,7 +25,7 @@ const Header = () => (
       display: flex;
       justify-content: space-between;
       align-items: center;
-      width: 100%;
+      width: 100vw;
       position: fixed;
       top: 0;
       z-index: 2;

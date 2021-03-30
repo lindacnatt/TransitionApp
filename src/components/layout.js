@@ -17,7 +17,7 @@ return (
 
         html,
         body {
-          WebkitTapHighlightColor: "transparent";
+          -webkit-tap-highlight-color: transparent;
           margin: 0;
           height: 100%;
           overflow: hidden;

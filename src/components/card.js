@@ -15,7 +15,7 @@ const useStyles = makeStyles({
   },
 });
 
-const CardEx = () => {
+const CardEx = (props) => {
   return (
       <Card>
         <CardActionArea>
@@ -23,7 +23,7 @@ const CardEx = () => {
             component="img"
             alt="Default Image"
             height="150"
-            image={image}
+            image={props.imageSource}
           />
           <CardContent>
             <Typography gutterBottom variant="h6" component="h2">
