@@ -57,15 +57,6 @@ const Layout = ({ children }) => {
         <html lang="en" />
         <title>{title}</title>
         <meta name="description" content={description} />
-        <meta
-          name="viewport"
-          content="initial-scale=1, viewport-fit=cover, user-scalable=no"
-        />
-        <meta
-          name="apple-mobile-web-app-status-bar-style"
-          content="black-translucent"
-        />
-        <link rel="manifest" href="/site.webmanifest" />
       </Helmet>
       <Header />
       <main
