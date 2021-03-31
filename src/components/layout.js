@@ -65,7 +65,7 @@ const Layout = ({ children }) => {
       name="apple-mobile-web-app-status-bar-style"
       content="black-translucent"
     />
-    <link rel="manifest" href="../../public/site.webmanifest" />
+    <link rel="manifest" href="/site.webmanifest" />
       </Helmet>
       <Header />
       <main
