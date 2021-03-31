@@ -14,7 +14,7 @@ const Footer = () => {
     width: 100vw;
     position: fixed;
     bottom: 0;
-    z-index: 2;
+    z-index: -1;
     padding: 1em;
   `}>
       <Button variant="outlined">
