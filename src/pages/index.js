@@ -25,11 +25,11 @@ const IndexPage = () => {
     },
     {
       image: "flower.jpeg",
-      easing: "easing1",
+      easing: "easing3",
     },
     {
       image: "flower.jpeg",
-      easing: "easing1",
+      easing: "easing4",
     },
   ];
   return (
@@ -43,20 +43,6 @@ const IndexPage = () => {
             />
           </Grid>
         ))}
-
-
-        <Grid onClick={handleClickOnCard} item xs={6}>
-          <Card1 title="Icon" imageSource={require("../images/flower.jpeg")} />
-        </Grid>
-        <Grid item xs={6}>
-          <Card1 title="Icon" imageSource={require("../images/icon.png")} />
-        </Grid>
-        <Grid item xs={6}>
-          <Card1 title="Icon" imageSource={require("../images/icon.png")} />
-        </Grid>
-        <Grid item xs={6}>
-          <Card1 title="Icon" imageSource={require("../images/flower.jpeg")} />
-        </Grid>
       </Grid>
       <div className={`menu ${isOpen ? "active" : "inactive"} ${easingClass}`}>
         <CardDetail />
