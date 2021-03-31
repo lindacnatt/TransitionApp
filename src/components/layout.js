@@ -1,6 +1,7 @@
 import * as React from "react";
 import { Global, css } from "@emotion/core";
 import Header from "./header";
+import Footer from "./footer";
 import Helmet from "react-helmet";
 import useSiteMetadata from "../hooks/use-sitemetadata";
 
@@ -19,7 +20,7 @@ const Layout = ({ children }) => {
           body {
             -webkit-tap-highlight-color: transparent;
             margin: 0;
-            height: 100%;
+            height: 100vh;
             overflow: hidden;
             font-size: 18px;
             color: #555;
@@ -79,6 +80,7 @@ const Layout = ({ children }) => {
       >
         {children}
       </main>
+      <Footer/>
     </>
   );
 };
