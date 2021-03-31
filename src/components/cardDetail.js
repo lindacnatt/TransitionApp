@@ -1,21 +1,33 @@
 import React, { useState } from "react";
 import { css } from "@emotion/core";
-
+import { faTimes } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const CardDetail = () => {
   return (
     <div
-      className= "Background"
+      className="Background"
       css={css`
-      top: 0;
-      bottom: 0;
-      width: 100vw;
-      height: 100vh;
-      position: absolute;
-      z-index: 1;
-      margin-top: 0;
-      background-color: #fafafa;
-    `}
+        top: 0;
+        bottom: 0;
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        z-index: 3;
+        margin-top: 0;
+        background-color: #fafafa;
+      `}
     >
+      <FontAwesomeIcon
+        icon={faTimes}
+        css={css`
+          top: 0;
+          left: 0;
+          position: absolute;
+          z-index: 4;
+          margin: 1rem;
+          color: black;
+        `}
+      />
       <div
         className="image"
         css={css`
@@ -27,9 +39,10 @@ const CardDetail = () => {
       <h2
         css={css`
           padding: 10px;
+          margin-top: 2rem;
         `}
       >
-        Text 1
+        This is a card
       </h2>
     </div>
   );

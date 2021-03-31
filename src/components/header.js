@@ -28,7 +28,7 @@ const Header = () => (
       width: 100vw;
       position: fixed;
       top: 0;
-      z-index: 2;
+      z-index: 0;
       padding-top: 1rem;
       padding-left: 0.5rem;
       padding-right: 0.5rem;

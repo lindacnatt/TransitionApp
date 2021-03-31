@@ -4,7 +4,7 @@ import Layout from "../components/layout";
 import CardGrid from "../components/cardGrid.js"
 import "./style.css";
 
-const IndexPage = () => {
+const FadePage = () => {
   const random1 = [
     {
       image: "flower.jpeg",
@@ -48,4 +48,4 @@ const IndexPage = () => {
   );
 };
 
-export default IndexPage;
+export default FadePage;
