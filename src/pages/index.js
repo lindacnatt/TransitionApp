@@ -8,11 +8,44 @@ import "./style.css";
 
 const IndexPage = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const toggle = () => setIsOpen(!isOpen);
+  const [easingClass, setEasingClass] = useState("");
+  const handleClickOnCard = (easingType) => {
+    setEasingClass(easingType);
+    setIsOpen(!isOpen);
+   };
+
+  const random = [
+    {
+      image: "flower.jpeg",
+      easing: "easing1",
+    },
+    {
+      image: "icon.png",
+      easing: "easing2",
+    },
+    {
+      image: "flower.jpeg",
+      easing: "easing1",
+    },
+    {
+      image: "flower.jpeg",
+      easing: "easing1",
+    },
+  ];
   return (
     <Layout>
       <Grid container spacing={2} justify="center" alignItems="center">
-        <Grid onClick={toggle} item xs={6}>
+        {random.map((item) => (
+          <Grid onClick={ () => handleClickOnCard(item.easing) } item xs={6}>
+            <Card1
+              title="Icon"
+              imageSource={require("../images/" + item.image)}
+            />
+          </Grid>
+        ))}
+
+
+        <Grid onClick={handleClickOnCard} item xs={6}>
           <Card1 title="Icon" imageSource={require("../images/flower.jpeg")} />
         </Grid>
         <Grid item xs={6}>
@@ -25,7 +58,7 @@ const IndexPage = () => {
           <Card1 title="Icon" imageSource={require("../images/flower.jpeg")} />
         </Grid>
       </Grid>
-      <div className={`menu ${isOpen ? "active" : "inactive"}`}>
+      <div className={`menu ${isOpen ? "active" : "inactive"} ${easingClass}`}>
         <CardDetail />
       </div>
     </Layout>

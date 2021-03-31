@@ -22,6 +22,13 @@
     Snabb in: cubic-bezier(.21,.95,.27,1.04)
  */
 
+  .menu.easing1{
+    transition-timing-function: cubic-bezier(.88,.7,.45,1.23);
+  }
+  .menu.easing2{
+    transition-timing-function: cubic-bezier(.21,.95,.27,1.04);
+  }
+
   .menu.active {
     visibility: visible;
     transform: translateX(0);
