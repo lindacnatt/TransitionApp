@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { css } from "@emotion/core";
 import { faTimes } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-const CardDetail = () => {
+const CardDetail = (props) => {
   return (
     <div
       className="Background"
@@ -17,6 +17,7 @@ const CardDetail = () => {
         background-color: #fafafa;
       `}
     >
+      <div onClick={() => props.close()}>
       <FontAwesomeIcon
         icon={faTimes}
         css={css`
@@ -28,6 +29,7 @@ const CardDetail = () => {
           color: black;
         `}
       />
+      </div>
       <div
         className="image"
         css={css`

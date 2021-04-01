@@ -14,8 +14,7 @@
     width: 100vw;
     box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
     visibility: hidden;
-    transform: translateX(400px);
-    transition: transform 0.5s cubic-bezier(.88,.7,.45,1.23) , visibility 0.4s;
+    transition: all 0.5s cubic-bezier(.88,.7,.45,1.23);
     margin-top: 0;
   }
  /* Studs: cubic-bezier(.88,.7,.45,1.23) 
@@ -49,31 +48,29 @@
     
   }
 
-  .menu.active {
+
+
+.slide.inactive{
+  transform: translateX(400px);
+}
+.slide.active {
+  visibility: visible;
+  transform: translateX(0);
+}
+.fade.active{
     visibility: visible;
-    transform: translateX(0);
-  }
-  .menu.slide{
-    visibility: visible;
-    transform: translateX(0);
+    opacity: 1;
+}
+.fade.inactive{
+  opacity: 0;
 }
 
-.menuFade{
 
-  margin-top: 0;
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100vw;
-  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
-  visibility: hidden;
+.menuFade{
   opacity: 0;
   transition: opacity 0.8s;
 }
-  .menuFade.in{
-    visibility: visible;
-    opacity: 1;
-  }
+
   .menuFade.easing1{
     /* 
     Studs: cubic-bezier(.88,.7,.45,1.23)
