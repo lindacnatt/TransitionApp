@@ -24,9 +24,6 @@ const CardGrid = (props) => {
         </Grid>
       ))}
       <div className={`menu ${isOpen ? "active" : "inactive"} ${easingClass} ${props.animationStyle}`}>
-      {/*
-       {`menu ${isOpen ? "active" : "inactive"} ${easingClass}`}
-      {`menuFade ${isOpen ? "in" : " "} ${easingClass}`} */}
         <CardDetail close={handleClickOnCard}/>
       </div>
     </Grid>

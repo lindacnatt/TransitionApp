@@ -12,7 +12,7 @@ const CardDetail = (props) => {
         width: 100vw;
         height: 100vh;
         position: absolute;
-        z-index: 3;
+        z-index: 4;
         margin-top: 0;
         background-color: #fafafa;
       `}
@@ -34,7 +34,7 @@ const CardDetail = (props) => {
         className="image"
         css={css`
           top: 0;
-          height: 70vw;
+          height: 30vh;
           background-color: grey;
         `}
       ></div>

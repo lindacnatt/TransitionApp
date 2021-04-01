@@ -1,9 +1,9 @@
 import * as React from "react";
 import { Global, css } from "@emotion/core";
 import Header from "./header";
-import Footer from "./footer";
 import Helmet from "react-helmet";
 import useSiteMetadata from "../hooks/use-sitemetadata";
+import Footer from "../components/footer.js";
 
 const Layout = ({ children }) => {
   const { title, description } = useSiteMetadata();

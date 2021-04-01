@@ -4,8 +4,9 @@ import Layout from "../components/layout";
 import CardGrid from "../components/cardGrid.js"
 import "./style.css";
 
-const IndexPage = () => {
 
+
+const IndexPage = () => {
   const random1 = [
     {
       image: "flower.jpeg",
@@ -44,7 +45,8 @@ const IndexPage = () => {
   ];
   return (
     <Layout>
-      <CardGrid order={random1} animationStyle={"fade"}/>
+      <CardGrid order={random1} animationStyle={"slide"}/>
+      
     </Layout>
   );
 };

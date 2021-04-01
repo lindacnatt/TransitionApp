@@ -48,8 +48,6 @@
     
   }
 
-
-
 .slide.inactive{
   transform: translateX(400px);
 }
@@ -71,29 +69,3 @@
   transition: opacity 0.8s;
 }
 
-  .menuFade.easing1{
-    /* 
-    Studs: cubic-bezier(.88,.7,.45,1.23)
-    */
-    transition-timing-function: cubic-bezier(0.68, -0.6, 0.32, 1.6);
-  }
-  .menuFade.easing2{
-    /* 
-    Snabb in: cubic-bezier(.21,.95,.27,1)
-    */
-    transition-timing-function: cubic-bezier(.21,.95,.27,1);
-  }
-
-  .menuFade.easing3{
-    /* 
-    Linear: cubic-bezier(.5,.5,.5,5)
-    */
-    transition-timing-function: cubic-bezier(.5,.5,.5,.5);
-  }
-  .menuFade.easing4{
-    /* 
-    easeIn: cubic-bezier(0.5, 0, 0.75, 0)
-    */
-    transition-timing-function: cubic-bezier(0.5, 0, 0.75, 0);
-    
-  }
