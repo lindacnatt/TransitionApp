@@ -5,9 +5,7 @@ import CardGrid from "../components/cardGrid.js"
 import "./style.css";
 import Footer from "../components/footer";
 
-
-
-const IndexPage = () => {
+const ExpandPage = () => {
   const random1 = [
     {
       image: "flower.jpeg",
@@ -46,10 +44,10 @@ const IndexPage = () => {
   ];
   return (
     <Layout>
-      <CardGrid order={random1} animationStyle={"slide"}/>
-      <Footer round={"1"} nextPage={"fade"}/>
+      <CardGrid order={random1} animationStyle={"shrink"}/>
+      <Footer round={"2"} nextPage={"/"}/>
     </Layout>
   );
 };
 
-export default IndexPage;
+export default ExpandPage;

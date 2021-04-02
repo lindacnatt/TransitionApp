@@ -3,6 +3,7 @@ import { useState } from "react";
 import Layout from "../components/layout";
 import CardGrid from "../components/cardGrid.js"
 import "./style.css";
+import Footer from "../components/footer";
 
 const FadePage = () => {
   const random1 = [
@@ -44,6 +45,7 @@ const FadePage = () => {
   return (
     <Layout>
       <CardGrid order={random1} animationStyle={"fade"}/>
+      <Footer round={"3"} nextPage={"/expand"}/>
     </Layout>
   );
 };

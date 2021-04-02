@@ -56,16 +56,27 @@
   transform: translateX(0);
 }
 .fade.active{
-    visibility: visible;
-    opacity: 1;
+  visibility: visible;
+  opacity: 1;
 }
 .fade.inactive{
   opacity: 0;
 }
 
+.shrink.active{
+  width: 40vh;
+  height: 20vh;
+  visibility: visible;
 
-.menuFade{
-  opacity: 0;
-  transition: opacity 0.8s;
+
 }
+.shrink.inactive{
+  width: 40vh;
+  height: 20vh;
+  visibility: visible;
+  opacity: 1;
+  top: 100%;
+  right:100%;
+}
+
 

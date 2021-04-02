@@ -6,9 +6,11 @@ import Card1 from "../components/card.js";
 import CardDetail from "../components/cardDetail.js";
 import "../pages/style.css";
 
+
 const CardGrid = (props) => {
   const [isOpen, setIsOpen] = useState(false);
   const [easingClass, setEasingClass] = useState("");
+  console.log("round: " + props.round)
   const handleClickOnCard = (easingType) => {
     setEasingClass(easingType);
     setIsOpen(!isOpen);
