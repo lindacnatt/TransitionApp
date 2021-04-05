@@ -2,8 +2,6 @@ import * as React from "react";
 import { css } from "@emotion/core";
 import styled from "@emotion/styled";
 import { Link } from "gatsby";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 const NavLink = styled(Link)`
   color: white;
@@ -23,8 +21,7 @@ const Header = () => (
     css={css`
       background-color: #454545;
       display: flex;
-      justify-content: space-between;
-      align-items: center;
+      justify-content: center;
       width: 100vw;
       position: fixed;
       top: 0;
@@ -37,13 +34,6 @@ const Header = () => (
   >
 
     <NavLink to="/">App</NavLink>
-    <FontAwesomeIcon
-      icon={faBars}
-      css={css`
-      margin: 0 0.75rem 0 0;
-    color: white;
-      `}
-    />
   </header>
 );
 

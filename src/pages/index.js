@@ -25,6 +25,14 @@ const IndexPage = () => {
       image: "flower.jpeg",
       easing: "easing4",
     },
+    {
+      image: "flower.jpeg",
+      easing: "easing3",
+    },
+    {
+      image: "flower.jpeg",
+      easing: "easing4",
+    },
   ];
   const random2 = [
     {

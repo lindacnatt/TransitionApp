@@ -3,7 +3,7 @@ import { Global, css } from "@emotion/core";
 import Header from "./header";
 import Helmet from "react-helmet";
 import useSiteMetadata from "../hooks/use-sitemetadata";
-import Footer from "../components/footer.js";
+
 
 const Layout = ({ children }) => {
   const { title, description } = useSiteMetadata();
@@ -25,7 +25,7 @@ const Layout = ({ children }) => {
             font-size: 18px;
             color: #555;
             line-height: 1.4;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+            font-family: 'Trebuchet MS', Helvetica, sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
               Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 
             > div {
@@ -75,7 +75,7 @@ const Layout = ({ children }) => {
           max-width: 90vw;
           width: 550px;
           standalone: mt-22;
-          padding-top: 4rem;
+          padding-top: 3rem;
         `}
       >
         {children}

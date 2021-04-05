@@ -17,11 +17,11 @@ const Footer = (props) => {
         left: 0;
         right: 0;
         z-index: 0;
-        padding: 1em;
+        padding: 0.75em;
       `}
     >
 
-      <h1>Round {props.round}</h1>
+      <h2>Round {props.round}</h2>
         <Button variant="outlined"><Link to={props.nextPage}>Next</Link></Button>     
     </footer>
   );
