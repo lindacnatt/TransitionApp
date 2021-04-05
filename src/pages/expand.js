@@ -41,10 +41,18 @@ const ExpandPage = () => {
       image: "flower.jpeg",
       easing: "easing4",
     },
+    {
+      image: "flower.jpeg",
+      easing: "easing1",
+    },
+    {
+      image: "icon.png",
+      easing: "easing4",
+    },
   ];
   return (
     <Layout>
-      <CardGrid order={random1} animationStyle={"shrink"}/>
+      <CardGrid order={random2} animationStyle={"expand"}/>
       <Footer round={"3"} nextPage={"/"}/>
     </Layout>
   );

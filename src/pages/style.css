@@ -11,6 +11,8 @@
     position: absolute;
     top: 0;
     right: 0;
+    left:0;
+    bottom: 0;
     width: 100vw;
     box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
     visibility: hidden;
@@ -63,18 +65,17 @@
   opacity: 0;
 }
 
-.shrink.active{
-  width: 40vh;
-  height: 20vh;
+.expand.active{
+  transform: scale(1);
   visibility: visible;
-}
-.shrink.inactive{
-  width: 40vh;
-  height: 20vh;
-  visibility: visible;
+  transform-origin: center center;
   opacity: 1;
-  top: 100%;
-  right:100%;
+
+}
+.expand.inactive{
+  transform: scale(0);
+  transform-origin: center center;
+  opacity: 0.2;
 }
 
 
