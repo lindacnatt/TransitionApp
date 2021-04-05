@@ -35,7 +35,8 @@ const CardDetail = (props) => {
         css={css`
           top: 0;
           height: 30vh;
-          background-color: grey;
+          background: url('../images/${props.img}');
+         
         `}
       ></div>
       <h2

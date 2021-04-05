@@ -51,6 +51,19 @@
     transition-timing-function: cubic-bezier(0.5, 0, 0.75, 0);
     
   }
+  .menu.easing5{
+    /* 
+    ease-ut: cubic-bezier(.5,.5,.5,5)
+    */
+    transition-timing-function: cubic-bezier(0.61, 1, 0.88, 1);
+  }
+  .menu.easing6{
+    /* 
+    easeInOut: cubic-bezier(0.76, 0, 0.24, 1)
+    */
+    transition-timing-function: cubic-bezier(0.46,0.03,0.52,0.96);
+    
+  }
 
 .slide.inactive{
   transform: translateX(400px);
