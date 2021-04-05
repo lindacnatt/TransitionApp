@@ -5,7 +5,7 @@ import CardGrid from "../components/cardGrid.js"
 import "./style.css";
 import Footer from "../components/footer";
 
-const ExpandPage = () => {
+const FlipPage = () => {
   const random1 = [
     {
       image: "flower.jpeg",
@@ -52,10 +52,10 @@ const ExpandPage = () => {
   ];
   return (
     <Layout>
-      <CardGrid order={random2} animationStyle={"expand"}/>
-      <Footer round={"3"} nextPage={"/flip"}/>
+      <CardGrid order={random2} animationStyle={"flip"}/>
+      <Footer round={"4"} nextPage={"/"}/>
     </Layout>
   );
 };
 
-export default ExpandPage;
+export default FlipPage;

@@ -75,7 +75,7 @@ const Layout = ({ children }) => {
           max-width: 90vw;
           width: 550px;
           standalone: mt-22;
-          padding-top: 3rem;
+          padding-top: 9vh;
         `}
       >
         {children}
