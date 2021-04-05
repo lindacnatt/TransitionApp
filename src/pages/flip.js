@@ -1,5 +1,4 @@
 import * as React from "react";
-import { useState } from "react";
 import Layout from "../components/layout";
 import CardGrid from "../components/cardGrid.js"
 import "./style.css";
@@ -52,7 +51,7 @@ const FlipPage = () => {
   ];
   return (
     <Layout>
-      <CardGrid order={random2} animationStyle={"flip"}/>
+      <CardGrid order={random2} animationStyle={"expand"}/>
       <Footer round={"4"} nextPage={"/"}/>
     </Layout>
   );
