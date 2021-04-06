@@ -10,9 +10,11 @@ const CardGrid = (props) => {
   const [easingClass, setEasingClass] = useState("");
   const [imgClass, setImgClass] = useState("grey");
   const handleClickOnCard = (easingType, backImage) => {
+   if (easingType !== undefined){
     setEasingClass(easingType);
-    setIsOpen(!isOpen);
     setImgClass(backImage)
+   }
+    setIsOpen(!isOpen);
   };
   return (
     <div>

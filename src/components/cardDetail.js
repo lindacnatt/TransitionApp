@@ -18,25 +18,26 @@ const CardDetail = (props) => {
       `}
     >
       <div onClick={() => props.close()}>
-      <FontAwesomeIcon
-        icon={faTimes}
-        css={css`
-          top: 0;
-          left: 0;
-          position: absolute;
-          z-index: 4;
-          margin: 1rem;
-          color: black;
-        `}
-      />
+        <FontAwesomeIcon
+          icon={faTimes}
+          css={css`
+            top: 0;
+            left: 0;
+            position: absolute;
+            z-index: 4;
+            margin: 1rem;
+            color: black;
+          `}
+        />
       </div>
       <div
         className="image"
         css={css`
           top: 0;
           height: 30vh;
-          background: url('../images/${props.img}');
-         
+          background: url("../images/${props.img}");
+          background-size: cover;
+          background-position: center;
         `}
       ></div>
       <h2
