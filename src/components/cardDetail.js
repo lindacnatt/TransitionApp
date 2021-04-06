@@ -40,7 +40,7 @@ const CardDetail = (props) => {
         className="image"
         css={css`
           top: 0;
-          height: 30vh;
+          height: 35vh;
           background: url("../images/${props.img}");
           background-size: cover;
           background-position: center;
