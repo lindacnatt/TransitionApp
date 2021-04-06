@@ -12,7 +12,7 @@ const useStyles = makeStyles({
   },
   media: {
     minHeight: 30,
-    maxHeight: 70,
+    maxHeight: 90,
   },
   text:{
     fontFamily: "Trebuchet MS",
@@ -34,7 +34,7 @@ const CardEx = (props) => {
           />
           <CardContent>
             <Typography gutterBottom className={classes.text} >
-              Card
+              Card {props.number+1}
             </Typography>
           </CardContent>
         </CardActionArea>

@@ -16,7 +16,7 @@ const NavLink = styled(Link)`
   }
 `;
 
-const Header = () => (
+const Header = (props) => (
   <header
     css={css`
       background-color: #454545;
@@ -33,7 +33,7 @@ const Header = () => (
     `}
   >
 
-    <NavLink to="/">App</NavLink>
+    <NavLink to="/">{props.title}</NavLink>
   </header>
 );
 

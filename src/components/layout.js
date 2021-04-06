@@ -68,7 +68,7 @@ const Layout = ({ children }) => {
     />
     <link rel="manifest" href="/site.webmanifest" />
       </Helmet>
-      <Header />
+      <Header title="App" />
       <main
         css={css`
           margin: 2rem auto 4rem;

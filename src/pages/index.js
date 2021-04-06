@@ -10,108 +10,86 @@ import Footer from "../components/footer";
 const IndexPage = () => {
   const random1 = [
     {
-      image: "flower.jpeg",
+      image: "1.png",
+      easing: "noeasing",
+    },
+    {
+      image: "2.png",
       easing: "easing1",
     },
     {
-      image: "flower.jpeg",
+      image: "3.png",
       easing: "easing2",
     },
     {
-      image: "flower.jpeg",
+      image: "4.png",
       easing: "easing3",
     },
     {
-      image: "flower.jpeg",
+      image: "5.png",
       easing: "easing4",
     },
     {
-      image: "flower.jpeg",
+      image: "6.png",
       easing: "easing5",
-    },
-    {
-      image: "flower.jpeg",
-      easing: "easing6",
     },
   ];
   const random2 = [
     {
-      image: "flower.jpeg",
+      image: "1.png",
+      easing: "noeasing",
+    },
+    {
+      image: "2.png",
       easing: "easing2",
     },
     {
-      image: "flower.jpeg",
+      image: "3.png",
       easing: "easing3",
     },
     {
-      image: "flower.jpeg",
+      image: "4.png",
       easing: "easing1",
     },
     {
-      image: "flower.jpeg",
-      easing: "easing4",
-    },
-    {
-      image: "flower.jpeg",
+      image: "5.png",
       easing: "easing5",
     },
     {
-      image: "flower.png",
-      easing: "easing6",
+      image: "6.png",
+      easing: "easing4",
     },
   ];
   const random3 = [
     {
-      image: "flower.jpeg",
-      easing: "easing6",
+      image: "1.png",
+      easing: "noeasing",
     },
     {
-      image: "flower.jpeg",
+      image: "2.png",
+      easing: "easing5",
+    },
+    {
+      image: "3.png",
       easing: "easing3",
     },
     {
-      image: "flower.jpeg",
-      easing: "easing4",
-    },
-    {
-      image: "flower.jpeg",
-      easing: "easing2",
-    },
-    {
-      image: "flower.jpeg",
+      image: "4.png",
       easing: "easing1",
     },
     {
-      image: "flower.jpeg",
-      easing: "easing5",
-    },
-  ];
-  const random4 = [
-    {
-      image: "flower.jpeg",
-      easing: "easing4",
-    },
-    {
-      image: "flower.jpeg",
-      easing: "easing6",
-    },
-    {
-      image: "flower.jpeg",
+      image: "5.png",
       easing: "easing2",
     },
     {
-      image: "flower.jpeg",
-      easing: "easing1",
-    },
-    {
-      image: "flower.jpeg",
-      easing: "easing3",
-    },
-    {
-      image: "flower.jpeg",
-      easing: "easing5",
+      image: "6.png",
+      easing: "easing4",
     },
   ];
+
+
+
+ 
   return (
     <Layout>
       <CardGrid order={random1} animationStyle={"slide"}/>

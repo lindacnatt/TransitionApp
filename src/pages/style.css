@@ -6,6 +6,7 @@
     padding-right: 1rem;
     padding-bottom: 1.5rem !important;
   }
+
 }
 
 .menu {
@@ -57,16 +58,15 @@
     */
     transition-timing-function: ease-out;
   }
-  .menu.easing6{
+  .menu.noeasing{
     /* 
     easeInOut: cubic-bezier(0.76, 0, 0.24, 1)
     */
-    transition-timing-function: ease-in-out;
-    
+    transition: none;
   }
 
 .slide.inactive{
-  transform: translateX(350px);
+  transform: translateX(400px);
 
 }
 .slide.active {
@@ -92,7 +92,7 @@
 .expand.inactive{
   transform: scale(0);
   transform-origin: center center;
-  opacity: 0.2;
+  opacity: 0.3;
 }
 .flip.active{
   visibility: visible;

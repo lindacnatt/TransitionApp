@@ -1,7 +1,9 @@
 import React from "react";
 import { css } from "@emotion/core";
-import { faTimes } from "@fortawesome/free-solid-svg-icons";
+import {faAngleLeft} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Header from "./header";
+
 const CardDetail = (props) => {
   return (
     <div
@@ -17,16 +19,20 @@ const CardDetail = (props) => {
         background-color: #fafafa;
       `}
     >
+      <Header title="Detail" />
       <div onClick={() => props.close()}>
         <FontAwesomeIcon
-          icon={faTimes}
+          className="icon"
+          icon={faAngleLeft
+          }
           css={css`
             top: 0;
             left: 0;
             position: absolute;
             z-index: 4;
-            margin: 1rem;
-            color: black;
+            margin: 1.5rem;
+            color: white;
+            font-size: 1rem;
           `}
         />
       </div>
@@ -42,12 +48,18 @@ const CardDetail = (props) => {
       ></div>
       <h2
         css={css`
-          padding: 10px;
+          padding: 1rem;
           margin-top: 2rem;
         `}
       >
         This is a card
       </h2>
+      <p  css={css`
+          padding: 1rem;
+          opacity: 0.9;
+        `}>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
     </div>
   );
 };

@@ -27,8 +27,10 @@ const CardGrid = (props) => {
             xs={6}
           >
             <Card1
+              number={index}
               title="Icon"
-              imageSource={require("../images/" + item.image)}
+              imageSource={require("../images/" + item.image)
+              }
             />
           </Grid>
         ))}
