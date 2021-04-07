@@ -84,11 +84,36 @@ const ExpandPage = () => {
       easing: "easing4",
     },
   ];
-
+  const random4 = [
+    {
+      image: "1.png",
+      easing: "noeasing",
+    },
+    {
+      image: "2.png",
+      easing: "easing5",
+    },
+    {
+      image: "3.png",
+      easing: "easing4",
+    },
+    {
+      image: "4.png",
+      easing: "easing2",
+    },
+    {
+      image: "5.png",
+      easing: "easing3",
+    },
+    {
+      image: "6.png",
+      easing: "easing1",
+    },
+  ];
 
   return (
     <Layout>
-      <CardGrid order={random1} animationStyle={"expand"}/>
+      <CardGrid order={random3} animationStyle={"expand"}/>
       <Footer round={"3"} nextPage={"/flip"}/>
     </Layout>
   );

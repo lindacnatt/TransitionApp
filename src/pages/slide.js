@@ -1,11 +1,12 @@
 import * as React from "react";
-import { useState } from "react";
 import Layout from "../components/layout";
 import CardGrid from "../components/cardGrid.js"
 import "./style.css";
 import Footer from "../components/footer";
 
-const FadePage = () => {
+
+
+const SlidePage = () => {
   const random1 = [
     {
       image: "1.png",
@@ -111,12 +112,13 @@ const FadePage = () => {
     },
   ];
 
+ 
   return (
     <Layout>
-      <CardGrid order={random2} animationStyle={"fade"}/>
-      <Footer round={"2"} nextPage={"/expand"}/>
+      <CardGrid order={random1} animationStyle={"slide"}/>
+      <Footer round={"1"} nextPage={"/fade"}/>
     </Layout>
   );
 };
 
-export default FadePage;
+export default SlidePage;
