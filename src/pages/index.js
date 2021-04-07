@@ -17,7 +17,7 @@ const IndexPage = () => {
         `}
       >
         <Button variant="outlined">
-          <Link to="/slide">Start</Link>
+          <Link to="/expand">Start</Link>
         </Button>
       </div>
     </Layout>

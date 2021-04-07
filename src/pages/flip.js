@@ -112,7 +112,7 @@ const FlipPage = () => {
   return (
     <Layout>
       <CardGrid order={random4} animationStyle={"flip"}/>
-      <Footer round={"4"} nextPage={"/"}/>
+      <Footer round={"4"} nextPage={"/EndPage"}/>
     </Layout>
   );
 };
