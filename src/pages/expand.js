@@ -113,8 +113,8 @@ const ExpandPage = () => {
 
   return (
     <Layout>
-      <CardGrid order={random1} animationStyle={"expand"}/>
-      <Footer round={"1"} nextPage={"/slide"}/>
+      <CardGrid order={random3} animationStyle={"expand"}/>
+      <Footer round={"3"} nextPage={"/flip"}/>
     </Layout>
   );
 };
