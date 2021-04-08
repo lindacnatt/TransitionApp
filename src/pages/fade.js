@@ -113,7 +113,7 @@ const FadePage = () => {
 
   return (
     <Layout>
-      <CardGrid order={random1} animationStyle={"fade"}/>
+      <CardGrid order={random3} animationStyle={"fade"}/>
       <Footer round={"3"} nextPage={"/flip"}/>
     </Layout>
   );

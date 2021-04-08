@@ -49,14 +49,14 @@
     /* 
     easeIn: cubic-bezier(0.5, 0, 0.75, 0)
     */
-    transition-timing-function: ease-in;
+    transition-timing-function: cubic-bezier(0.89, 0.08, 1, 1);
     
   }
   .menu.easing5{
     /* 
     ease-ut: cubic-bezier(.5,.5,.5,5)
     */
-    transition-timing-function: ease-out;
+    transition-timing-function: cubic-bezier(0, 0, 0.09, 0.95);
   }
   .menu.noeasing{
     /* 

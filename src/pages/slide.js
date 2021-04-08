@@ -115,8 +115,8 @@ const SlidePage = () => {
  
   return (
     <Layout>
-      <CardGrid order={random3} animationStyle={"slide"}/>
-      <Footer round={"1"} nextPage={"/expand"}/>
+      <CardGrid order={random2} animationStyle={"slide"}/>
+      <Footer round={"2"} nextPage={"/fade"}/>
     </Layout>
   );
 };
