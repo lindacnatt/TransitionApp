@@ -36,7 +36,7 @@
     /* 
     Snabb in: cubic-bezier(.21,.95,.27,1)
     */
-    transition-timing-function: cubic-bezier(.21,.95,.27,1);
+    transition-timing-function: cubic-bezier(0.5, 0.01, 0, 1.04);
   }
 
   .menu.easing3{
